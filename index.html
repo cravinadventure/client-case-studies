@@ -31,15 +31,17 @@
   .cs-handle{display:inline-block;font-size:13.5px;color:var(--electric);text-decoration:none;margin-top:3px}
   .cs-desc{margin-top:9px;font-size:14.5px;color:#cdccdf;max-width:560px}
 
-  .cs-projects{margin:24px 0 6px;border-top:1px solid var(--line)}
-  .cs-plabel{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin:18px 0 4px}
-  .cs-proj{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:13px 2px;border-bottom:1px solid var(--line)}
+  .cs-projects{margin:24px 0 0;border-top:1px solid var(--line);padding-top:6px}
+  .cs-plabel{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin:16px 0 12px}
+  .cs-proj{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;text-decoration:none;color:inherit;transition:border-color .15s,background .15s}
+  a.cs-proj:hover{border-color:var(--electric);background:rgba(108,92,231,.08)}
   .cs-proj .pname{font-size:15.5px;font-weight:600;color:var(--paper)}
   .cs-proj .psub{display:block;font-size:13px;color:var(--muted);margin-top:2px;font-weight:400}
-  .cs-proj .pdate{font-size:12.5px;color:var(--muted);white-space:nowrap;letter-spacing:.3px}
-
-  .cs-btn{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:13px 26px;border-radius:30px;background:var(--electric);color:#fff;font-size:14px;font-weight:700;letter-spacing:.3px;text-decoration:none;transition:transform .15s,box-shadow .15s}
-  .cs-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(108,92,231,.4)}
+  .pright{display:flex;align-items:center;gap:14px;white-space:nowrap}
+  .pright .pdate{font-size:12.5px;color:var(--muted);letter-spacing:.3px}
+  .pright .pgo{font-size:13px;font-weight:700;color:var(--electric)}
+  .cs-proj.soon{opacity:.6}
+  .cs-proj.soon .pgo{color:var(--muted)}
 
   footer{padding:48px 0 70px;text-align:center;border-top:1px solid var(--line);color:var(--muted)}
   footer .brand{font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--paper);font-size:14px}
@@ -80,17 +82,15 @@
 
       <div class="cs-projects">
         <div class="cs-plabel">Projects</div>
-        <div class="cs-proj">
+        <a class="cs-proj" href="https://cravinadventure.github.io/client-case-study-javes/" target="_blank" rel="noopener">
           <div><span class="pname">Rooftop Set Reels (Pru)</span><span class="psub">One rooftop DJ set turned into a full pack of post-ready videos.</span></div>
-          <span class="pdate">June 2026</span>
-        </div>
-        <div class="cs-proj">
+          <span class="pright"><span class="pdate">June 2026</span><span class="pgo">View &rarr;</span></span>
+        </a>
+        <div class="cs-proj soon">
           <div><span class="pname">Hot Gay Girl House</span><span class="psub">Live visuals for the HGGH event.</span></div>
-          <span class="pdate">June 2025</span>
+          <span class="pright"><span class="pdate">June 2025</span><span class="pgo">Coming soon</span></span>
         </div>
       </div>
-
-      <a class="cs-btn" href="https://cravinadventure.github.io/client-case-study-javes/" target="_blank" rel="noopener">View case study &rarr;</a>
     </article>
 
   </div>
